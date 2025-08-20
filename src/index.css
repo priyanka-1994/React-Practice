@@ -76,7 +76,7 @@ ul li::before {
 .item:first-child{
   margin: 0;
 }
-item input[type="checkbox"] {
+.item input[type="checkbox"] {
   text-align: center;
   width: 2.5rem;
   width: 48px;
