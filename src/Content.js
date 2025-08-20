@@ -30,7 +30,7 @@ const Content = () => {
                     <li className="item" key={item.id}>
                         <input 
                            type="checkbox"
-                           onchange={handleCheck}
+                           onchange={() => handleCheck(item.id)}
                            checked={item.checked}
                         />
                         <label>{item.item}</label>
