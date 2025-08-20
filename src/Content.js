@@ -22,7 +22,8 @@ const Content = () => {
     const handleCheck = (id) => {
         const listItems = items.map((item) => item.id === id ? { ...item, 
         checked: !item.checked } : item);
-        }
+        setItems(listItems);
+        localStorage.setItem('shoppinglist',JSON.stringify(listItems));
     }
 
     return (
@@ -35,7 +36,10 @@ const Content = () => {
                            onchange={() => handleCheck(item.id)}
                            checked={item.checked}
                         />
-                        <label>{item.item}</label>
+                        <label
+                            style={(item.checked) ? { textDecoration: 'line-through'} : null}
+                            onDoubleClick={()=> handleCheck(item.id)}
+                        >{item.item}</label>
                         {/* <button>Delete</button> */}
                         <FaTrashAlt role="button" tabIndex="0"/>
                     </li>
