@@ -19,6 +19,10 @@ const Content = () => {
             item: "Item 3"
         }
     ]);  
+    const handleCheck = (id) => {
+        console.log(`key: ${id}`)
+    }
+    
     return (
         <main>
             <ul>
