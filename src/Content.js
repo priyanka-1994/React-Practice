@@ -25,6 +25,9 @@ const Content = () => {
         setItems(listItems);
         localStorage.setItem('shoppinglist',JSON.stringify(listItems));
     }
+    const handleDelete = (id) => {
+        console.log(id)
+    }
 
     return (
         <main>
