@@ -39,7 +39,7 @@ const Content = () => {
                         <li className="item" key={item.id}>
                             <input 
                             type="checkbox"
-                            onchange={() => handleCheck(item.id)}
+                            onChange={() => handleCheck(item.id)}
                             checked={item.checked}
                             />
                             <label
