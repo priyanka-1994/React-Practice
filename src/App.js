@@ -37,6 +37,7 @@ function App() {
       <Content
         items={items} 
         setItems={setItems}
+        handleCheck={handleCheck}
       />
       <Footer />
     </div>
