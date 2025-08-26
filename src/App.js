@@ -23,7 +23,10 @@ function App() {
   return (
     <div className="App">
       <Header title="Grocery List" />
-      <Content />
+      <Content
+        items={items} 
+        setItems={setItems}
+      />
       <Footer />
     </div>
   );
